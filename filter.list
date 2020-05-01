@@ -1,10 +1,10 @@
 host-keyword, netflix, Netflix
 host-keyword, paypal, PayPal
 host-keyword, bilibili, bilibili
-;user-agent, ?abc*, proxy
-;host, www.google.com, proxy
-;host-keyword, adsite, reject
-;host-suffix, googleapis.com, proxy
+user-agent, ?abc*, proxy
+host, www.google.com, proxy
+host-keyword, adsite, reject
+host-suffix, googleapis.com, proxy
 DOMAIN-KEYWORD,google,PROXY
 DOMAIN-KEYWORD,facebook,PROXY
 DOMAIN-KEYWORD,youtube,PROXY
@@ -281,7 +281,7 @@ DOMAIN-SUFFIX,tapbots.com,PROXY
 DOMAIN-SUFFIX,ykimg.com,DIRECT
 DOMAIN-SUFFIX,medium.com,PROXY
 DOMAIN-SUFFIX,fast.com,PROXY
-DOMAIN-SUFFIX,nflxvideo.net,PROXY
+DOMAIN-SUFFIX,nflxvideo.net,Netflix
 DOMAIN-SUFFIX,clashroyaleapp.com,DIRECT
 DOMAIN-SUFFIX,acgvideo.com,DIRECT
 DOMAIN-SUFFIX,jianshu.com,DIRECT
