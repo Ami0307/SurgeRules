@@ -1,7 +1,10 @@
-#京东签到,pixiv去广告,知乎去广告,的米他妈和rewrite
+#京东签到,pixiv去广告,知乎去广告,的米他妈
 hostname = ji-bc.pw, api.m.jd.com, oauth.secure.pixiv.net, api.zhihu.com
-https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean url script-request-header JD_DailyBonus.js
+#京东签到重写
+https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean url script-request-header https://raw.githubusercontent.com/zhangxutong/quanx/master/js/JD_DailyBonus.js
+#pixiv去广告
 ^https://oauth.secure.pixiv.net/auth/token url response-body "is_premium":(.*?),"x_restrict" response-body "is_premium":true,"x_restrict"
+#知乎去广告
 ^https:\/\/api\.zhihu\.com\/answers\/.*\/comments\/featured-comment url reject-img
 ^https:\/\/api\.zhihu\.com\/appview\/api\/v4\/answers\/.*\/recommendations url reject-img
 ^https:\/\/api\.zhihu\.com\/(moments\?(action|feed_type)|topstory\/recommend|v\d\/questions|market\/header|people\/) url script-response-body https://raw.githubusercontent.com/zhangxutong/quanx/master/js/ZhiHu_All.js
