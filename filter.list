@@ -1,6 +1,10 @@
+#netflix
 host-keyword, netflix, Netflix
+#paypal
 host-keyword, paypal, PayPal
+#bilibili
 host-keyword, bilibili, bilibili
+#基本上大部分其他的
 user-agent, ?abc*, 地区
 host, www.google.com, 地区
 host-keyword, adsite, reject
