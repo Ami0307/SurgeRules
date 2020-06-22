@@ -1,0 +1,2 @@
+#喜茶cookie 
+^https:\/\/vip\.heytea\.com\/api\/service-member\/vip\/task$ url script-request-header https://raw.githubusercontent.com/zZPiglet/Task/master/HEYTEA/HEYTEA.js
