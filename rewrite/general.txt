@@ -18,4 +18,5 @@ https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean url script-reques
 ^https://app.bilibili.com/x/v2/show/popular/index\?access_key url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/bilibiliHot.js
 # 哔哩哔哩番剧开启1080P+
 ^https?:\/\/api\.bilibili\.com\/pgc\/player\/api\/playurl url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/bilifj.js
-
+#喜茶签到
+^https:\/\/vip\.heytea\.com\/api\/service-member\/vip\/task$ url script-request-header https://raw.githubusercontent.com/zZPiglet/Task/master/HEYTEA/HEYTEA.js
