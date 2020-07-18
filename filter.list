@@ -3,7 +3,24 @@ host-keyword, netflix, Netflix
 #paypal
 host-keyword, paypal, PayPal
 #bilibili
+
+# AsianMedia.list
+# > Bilibili
 host-keyword, bilibili, bilibili
+host-suffix, acg.tv, bilibili
+host-suffix, acgvideo.com, bilibili
+host-suffix, b23.tv, bilibili
+host-suffix, biliapi.com, bilibili
+host-suffix, biliapi.net, bilibili
+host-suffix, bilibili.com, bilibili
+host-suffix, bilibili.tv, bilibili
+host-suffix, biligame.com, bilibili
+host-suffix, biligame.net, bilibili
+host-suffix, bilivideo.com, bilibili
+host-suffix, hdslb.com, bilibili
+host-suffix, im9.com, bilibili
+host, upos-hz-mirrorakam.akamaized.net, bilibili
+user-agent, *bili*, bilibili
 #基本上大部分其他的
 user-agent, ?abc*, 地区
 host, www.google.com, 地区
