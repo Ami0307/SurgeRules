@@ -6,5 +6,6 @@ hostname = oauth.secure.pixiv.net, vip.heytea.com, api.weibo.cn, mapi.weibo.com,
 ^https:\/\/api\.zhihu\.com\/answers\/.*\/comments\/featured-comment url reject-img
 ^https:\/\/api\.zhihu\.com\/appview\/api\/v4\/answers\/.*\/recommendations url reject-img
 ^https:\/\/api\.zhihu\.com\/(moments\?(action|feed_type)|topstory\/recommend|v\d\/questions|market\/header|people\/) url script-response-body https://raw.githubusercontent.com/zhangxutong/quanx/master/js/ZhiHu_All.js
-
+# 彩云天气 Vip
+^https:\/\/biz\.caiyunapp\.com\/v2\/user\?app_name\=weather url script-response-body https://raw.githubusercontent.com/nzw9314/QuantumultX/master/NobyDa/QuantumultX/File/ColorWeather.js
 
