@@ -1,2 +1,6 @@
+hostname = api.m.jd.com, *.bilibili.com
 #京东cookie
 https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean url script-request-header https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
+# 哔哩哔哩番剧监控 (By @lowking)
+https?:\/\/app.bilibili.com\/x\/v2\/space\/bangumi url script-request-header https://raw.githubusercontent.com/lowking/Scripts/master/bilibili/bangumiMonitor.js
+
