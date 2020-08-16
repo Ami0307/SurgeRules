@@ -1,5 +1,5 @@
 #京东签到,pixiv去广告,知乎去广告,还有很多不一定能用上的的米他妈
-hostname = oauth.secure.pixiv.net, *.zhihu.com, *.bilibili.com
+hostname = oauth.secure.pixiv.net, *.zhihu.com, *.bilibili.com, google.cn
 #pixiv去广告
 ^https://oauth.secure.pixiv.net/auth/token url response-body "is_premium":(.*?),"x_restrict" response-body "is_premium":true,"x_restrict"
 #知乎去广告
@@ -9,3 +9,5 @@ hostname = oauth.secure.pixiv.net, *.zhihu.com, *.bilibili.com
 # 哔哩哔哩动画去广告 (By onewayticket255)
 https://app.bilibili.com/x/v2/(splash|search/(defaultword|square)) url reject-200
 https://api.bilibili.com/x/v2/dm/ad url reject-200
+#谷歌搜索重定向
+google.cn url 302 google.com
