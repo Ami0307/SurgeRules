@@ -1,3 +1,10 @@
+# > Bahamut
+USER-AGENT,Anime*,Bahamut
+DOMAIN-SUFFIX,bahamut.com.tw,Bahamut
+DOMAIN-SUFFIX,gamer.com.tw,Bahamut
+DOMAIN,gamer-cds.cdn.hinet.net,Bahamut
+DOMAIN,gamer2-cds.cdn.hinet.net,Bahamut
+
 #netease
 user-agent, NeteaseMusic*, 🎸解锁网易云音乐
 user-agent, NeteaseMusic**, 🎸解锁网易云音乐
