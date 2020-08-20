@@ -36,12 +36,11 @@ IP-CIDR,112.13.119.17/32,🎸解锁网易云音乐
 IP-CIDR,103.126.92.132/32,🎸解锁网易云音乐
 IP-CIDR,103.126.92.13/32,🎸解锁网易云音乐
 IP-CIDR,45.254.48.1/32,🎸解锁网易云音乐
+
 #netflix
 host-keyword, netflix, Netflix
-#paypal
-host-keyword, paypal, PayPal
-#bilibili
 
+#bilibili
 # AsianMedia.list
 # > Bilibili
 host-keyword, bilibili, bilibili
@@ -59,6 +58,7 @@ host-suffix, hdslb.com, bilibili
 host-suffix, im9.com, bilibili
 host, upos-hz-mirrorakam.akamaized.net, bilibili
 user-agent, *bili*, bilibili
+
 #基本上大部分其他的
 user-agent, ?abc*, 地区
 host, www.google.com, 地区
