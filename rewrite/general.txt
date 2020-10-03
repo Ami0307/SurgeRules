@@ -1,5 +1,5 @@
 #京东签到,pixiv去广告,知乎去广告,还有很多不一定能用上的的米他妈
-hostname = oauth.secure.pixiv.net, *.zhihu.com, *.bilibili.com, google.cn, *.googlevideo.com, api.gamer.com.tw
+hostname = oauth.secure.pixiv.net, *.zhihu.com, *.bilibili.com, google.cn, api.gamer.com.tw, app.bilibili.com, manga.bilibili.com
 #pixiv去广告
 ^https://oauth.secure.pixiv.net/auth/token url response-body "is_premium":(.*?),"x_restrict" response-body "is_premium":true,"x_restrict"
 #知乎去广告
@@ -8,8 +8,9 @@ hostname = oauth.secure.pixiv.net, *.zhihu.com, *.bilibili.com, google.cn, *.goo
 ^https:\/\/api\.zhihu\.com\/(moments\?(action|feed_type)|topstory\/recommend|v\d\/questions|market\/header|people\/) url script-response-body https://raw.githubusercontent.com/zhangxutong/quanx/master/js/ZhiHu_All.js
 #谷歌搜索重定向
 google.cn url 302 google.com
-#YouTube去广告
-^(http|https):\/\/[\w-]+\.googlevideo\.com\/[\w?=&.]+(&oad|ctier) url reject-200
 # 动画疯 去广告(by NobyDa)
 https:\/\/api\.gamer\.com\.tw\/mobile_app\/anime\/v3\/token\.php url script-request-header https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Bahamut.js
 https:\/\/api\.gamer\.com\.tw\/mobile_app\/anime\/v3\/token\.php url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Bahamut.js
+# > 哔哩哔哩
+^https?+:\/\/app\.bilibili\.com\/x\/v\d\/splash\/ url reject-200
+^https?+:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/Flash url reject-200
