@@ -1,5 +1,5 @@
 #京东签到,pixiv去广告,知乎去广告,还有很多不一定能用上的的米他妈
-hostname = oauth.secure.pixiv.net, *.zhihu.com, *.bilibili.com, google.cn, api.gamer.com.tw, app.bilibili.com, manga.bilibili.com, *.googlevideo.com
+hostname = oauth.secure.pixiv.net, *.zhihu.com, *.bilibili.com, google.cn, api.gamer.com.tw, app.bilibili.com, manga.bilibili.com
 #pixiv去广告
 ^https://oauth.secure.pixiv.net/auth/token url response-body "is_premium":(.*?),"x_restrict" response-body "is_premium":true,"x_restrict"
 #知乎去广告
@@ -14,6 +14,4 @@ https:\/\/api\.gamer\.com\.tw\/mobile_app\/anime\/v3\/token\.php url script-resp
 # > 哔哩哔哩
 ^https?+:\/\/app\.bilibili\.com\/x\/v\d\/splash\/ url reject-200
 ^https?+:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/Flash url reject-200
-#YouTube
-ctier=[A-Z] url 302 ctier=A
-^https://[\s\S]*\.googlevideo\.com/.*&(oad|ctier) url reject-200
+
