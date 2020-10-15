@@ -62,21 +62,21 @@ host-keyword, netflix, Netflix
 #Bilibili
 # AsianMedia.list
 # > Bilibili
-host-keyword, bilibili, bilibili
-host-suffix, acg.tv, bilibili
-host-suffix, acgvideo.com, bilibili
-host-suffix, b23.tv, bilibili
-host-suffix, biliapi.com, bilibili
-host-suffix, biliapi.net, bilibili
-host-suffix, bilibili.com, bilibili
-host-suffix, bilibili.tv, bilibili
-host-suffix, biligame.com, bilibili
-host-suffix, biligame.net, bilibili
-host-suffix, bilivideo.com, bilibili
-host-suffix, hdslb.com, bilibili
-host-suffix, im9.com, bilibili
-host, upos-hz-mirrorakam.akamaized.net, bilibili
-user-agent, *bili*, bilibili
+host-keyword, bilibili,Bilibili
+host-suffix, acg.tv, Bilibili
+host-suffix, acgvideo.com, Bilibili
+host-suffix, b23.tv, Bilibili
+host-suffix, biliapi.com, Bilibili
+host-suffix, biliapi.net, Bilibili
+host-suffix, bilibili.com, Bilibili
+host-suffix, bilibili.tv, Bilibili
+host-suffix, biligame.com, Bilibili
+host-suffix, biligame.net, Bilibili
+host-suffix, bilivideo.com, Bilibili
+host-suffix, hdslb.com, Bilibili
+host-suffix, im9.com, Bilibili
+host, upos-hz-mirrorakam.akamaized.net, Bilibili
+user-agent, *bili*, Bilibili
 
 #基本上大部分其他的
 # > ChinaIP by ipipdotnet
