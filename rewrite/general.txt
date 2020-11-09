@@ -1,5 +1,5 @@
 #京东签到,pixiv去广告,知乎去广告,还有很多不一定能用上的的米他妈
-hostname = oauth.secure.pixiv.net, *.zhihu.com, *.bilibili.com, google.cn, api.gamer.com.tw, app.bilibili.com, manga.bilibili.com, *.googlevideo.com, sub.store
+hostname = oauth.secure.pixiv.net, *.zhihu.com, *.bilibili.com, google.cn, api.gamer.com.tw, app.bilibili.com, manga.bilibili.com, *.googlevideo.com, 
 #pixiv去广告
 ^https://oauth.secure.pixiv.net/auth/token url response-body "is_premium":(.*?),"x_restrict" response-body "is_premium":true,"x_restrict"
 
@@ -37,4 +37,4 @@ ctier=[A-Z] url 302 ctier=A
 
 # SubStore
 ^https?:\/\/sub\.store url script-analyze-echo-response https://raw.githubusercontent.com/Peng-YM/Sub-Store/master/backend/sub-store.min.js
-
+hostname=sub.store
