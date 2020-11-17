@@ -23,9 +23,10 @@ https://zhuanlan\.zhihu\.com/api/articles/\d+/recommendation url reject-200
 ^https:\/\/api\.zhihu\.com\/(moments\?(action|feed_type)|topstory\/recommend|v\d\/questions|market\/header|people\/) url script-response-body https://raw.githubusercontent.com/zhangxutong/quanx/master/js/ZhiHu_All.js
 
 # 谷歌搜索重定向
-hostname =  google.cn
+hostname =  *.google.cn
 
-google.cn url 302 google.com
+
+^https?:\/\/(www.)?google\.cn url 302 https:\/\/www.google.com
 
 # 动画疯 去广告(by NobyDa)
 hostname = api.gamer.com.tw
