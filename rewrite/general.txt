@@ -1,4 +1,4 @@
-hostname = oauth.secure.pixiv.net, *.zhihu.com, *.bilibili.com, google.cn, api.gamer.com.tw, app.bilibili.com, manga.bilibili.com, *.googlevideo.com, sub.store 
+hostname = oauth.secure.pixiv.net, *.zhihu.com, *.bilibili.com, google.cn, app.bilibili.com, manga.bilibili.com, *.googlevideo.com, sub.store 
 
 ^https://oauth.secure.pixiv.net/auth/token url response-body "is_premium":(.*?),"x_restrict" response-body "is_premium":true,"x_restrict"
 
@@ -22,10 +22,6 @@ https://zhuanlan\.zhihu\.com/api/articles/\d+/recommendation url reject-200
 # 谷歌搜索重定向
 
 ^https?:\/\/(www.)?google\.cn url 302 https:\/\/www.google.com
-
-# 动画疯 去广告(by NobyDa)
-https:\/\/api\.gamer\.com\.tw\/mobile_app\/anime\/v3\/token\.php url script-request-header https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Bahamut.js
-https:\/\/api\.gamer\.com\.tw\/mobile_app\/anime\/v3\/token\.php url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Bahamut.js
 
 # 哔哩哔哩
 
