@@ -1,5 +1,9 @@
 #机场订阅
 host-keyword, losadhwselfff2332dasd, direct
+# EMBY
+DOMAIN-SUFFIX,emby.wtf,Emby
+DOMAIN-SUFFIX,plusmedia.site,Emby
+DOMAIN-SUFFIX,mickeycloud.com,Emby
 # > Apple Music
 host-suffix,blobstore.apple.com,Apple
 host-suffix,itsliveradio.apple.com,Apple
