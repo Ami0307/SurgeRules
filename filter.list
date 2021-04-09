@@ -2,6 +2,8 @@
 host-keyword, losadhwselfff2332dasd, direct
 # EMBY
 DOMAIN-SUFFIX,emby.w8ves.co,Emby
+DOMAIN-SUFFIX,emby.nexitally.com,Emby
+DOMAIN-SUFFIX,line.emby.men,Emby
 # > Apple Music
 host-suffix,blobstore.apple.com,Apple
 host-suffix,itsliveradio.apple.com,Apple
