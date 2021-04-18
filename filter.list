@@ -1,3 +1,6 @@
+#邮件
+host-suffix, p44-smtp.mail.me.com, Email
+host-suffix, smtp.gmail.com, Email
 #机场订阅
 host-keyword, losadhwselfff2332dasd, direct
 # EMBY
