@@ -4,6 +4,7 @@ host-suffix, smtp.gmail.com, Email
 #机场订阅
 host-keyword, losadhwselfff2332dasd, direct
 # EMBY
+DOMAIN-SUFFIX,emby.immtel.com,Emby
 DOMAIN-SUFFIX,emby.w8ves.co,Emby
 DOMAIN-SUFFIX,emby.nexitally.com,Emby
 DOMAIN-SUFFIX,line.emby.men,Emby
