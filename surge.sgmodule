@@ -1,7 +1,7 @@
 #!name=pixiv
 #!desc=pixiv去广告
 [Proxy]
-pixiv = type=http-response,pattern=^https://oauth.secure.pixiv.net/auth/token,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/zhangxutong/quanx/master/js/pixiv.js,script-update-interval=0
+pixiv = type=http-response,pattern=^https://oauth.secure.pixiv.net/auth/token,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/zhangxutong/quanx/master/js/pixiv.js
 [MITM]
 hostname= oauth.secure.pixiv.net
 
