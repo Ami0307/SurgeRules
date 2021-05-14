@@ -1,2 +1,2 @@
-host-suffix, p44-smtp.mail.me.com
-host-suffix, smtp.gmail.com
+DOMAIN-SUFFIX, p44-smtp.mail.me.com
+DOMAIN-SUFFIX, smtp.gmail.com
