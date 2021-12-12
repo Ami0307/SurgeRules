@@ -1,0 +1,9 @@
+#!name=模拟假条
+#!desc=我在校园假条模拟
+
+[SCRIPT]
+假条列表 = type=http-response, pattern=^https://student\.wozaixiaoyuan\.com/leave2/getList\.json, script-path=list4leave.js
+假条详情 = type=http-response, pattern=^https://student\.wozaixiaoyuan\.com/leave2/getLeave\.json, script-path=ask4leave.js
+
+[MITM]
+hostname= %APPEND% *.wozaixiaoyuan.com
